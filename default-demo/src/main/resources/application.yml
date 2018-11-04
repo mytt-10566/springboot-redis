@@ -1,0 +1,20 @@
+spring:
+  redis:
+    host: redis01.momo.com
+    port: 6379
+    # redis密码，默认为空
+    password: redis
+    # redis分片，默认值0（redis默认有16个分片，0-15）
+    database: 0
+    pool:
+      # 连接池最大连接数，默认值8（负数表示没有限制）
+      max-active: 8
+      # 连接最大等待时间（负数表示没有限制）
+      max-wait: -1
+      # 连接池中的最大空闲连接
+      max-idle: 8
+      # 连接池中的最小空闲连接
+      min-idle: 0
+    # 连接超时时间（毫秒）
+    timeout: 10000
+    
